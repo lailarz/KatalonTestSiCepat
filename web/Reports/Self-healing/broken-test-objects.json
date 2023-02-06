@@ -1,0 +1,34 @@
+{
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/SauceDemo Web/get password",
+      "brokenLocator": "secret_sauce",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//*[(text() \u003d \u0027secret_sauce\u0027 or . \u003d \u0027secret_sauce\u0027)]",
+      "proposedLocatorMethod": "BASIC",
+      "recoveryMethod": "BASIC",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/SauceDemo Web/get password_BASIC.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/SauceDemo Web/get_username",
+      "brokenLocator": "/html/body/div/div/div[2]/div[2]/div/div[1]/text()[1]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//*[(text() \u003d \u0027standard_user\u0027 or . \u003d \u0027standard_user\u0027) and @id \u003d \u0027login_credentials\u0027]",
+      "proposedLocatorMethod": "BASIC",
+      "recoveryMethod": "BASIC",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/SauceDemo Web/get_username_BASIC.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/SauceDemo Web/harga barang",
+      "brokenLocator": "//div[@id\u003d\u0027cart_contents_container\u0027]/div/div/div[3]/div[2]/div[2]/div",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Sauce Labs Backpack\u0027])[1]/following::div[3]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/SauceDemo Web/harga barang_neighbor.png"
+    }
+  ]
+}
